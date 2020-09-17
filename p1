@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#background{
+    width: 100%;
+    height: 100%;
+    background-color: #192C3F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 170px;
+    padding-right: 50px;
+
+}
+#part1{
+width: 40%;
+height: 78%;
+color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 20px 0px;
+
+}
+#part2{
+  background-color: white;
+  width: 32%;
+  height: 82%; 
+  border-radius: 8px; 
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#image{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+        background-image: url(img.png);
+        box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0) inset;
+        margin-left: -60px;
+      
+}
+
+#text h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+#text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgba(253, 253, 253, 0.808);
+}
+.buttons{
+    padding: 5px 37px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+   color: rgba(25, 44, 63, 0.781);
+    border: transparent;
+    border-bottom:2px solid rgba(25, 44, 63, 0.781) ;
+    margin: 0px -2px;
+}
+.buttons:nth-child(2){
+    opacity: 0.4;
+}
+#address{
+    width: 78%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#address p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(25, 44, 63, 0.781);
+    margin-bottom: 9px;
+}
+#address input{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(25, 44, 63, 0.678);
+    margin-bottom: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+}
+ #pass{
+    font-weight: 900;
+    color: black;
+     
+ }
+ #address h5{
+     margin-top: -20px;
+     margin-left: 65%;
+     font-family: 'Poppins', sans-serif;
+     font-size: 11px;
+     font-weight: 500;
+     color: rgba(25, 44, 63, 0.726);
+    
+ }
+ #signup{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ #signup button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: rgba(25, 44, 63, 0.726);
+    color: white;
+    padding: 13px 55px;
+   border: none;
+   letter-spacing: 0.5px;
+   border-radius: 8px;
+ }
+ #signup h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(183, 184, 187);
+    margin-top: 10px;
+   
+   letter-spacing: 0.5px;
+  
+ }
+
+ @media only screen and (max-width: 600px) {
+    #background {
+        width: 100%;
+       min-height: 50%;
+        background-color: #192C3F;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        /* align-items: center; */
+         padding-left: 0px; 
+         padding-right: 0px;
+       
+    }
+   
+    #part1 {
+       
+        width: 100%;
+        min-height: 50%;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 30px ;
+        padding-right: 30px;
+        position: relative;
+        align-items: flex-end;
+        
+    }
+    #text{
+        background-color: transparent;
+      position: absolute;
+      z-index: 999;
+      margin-top: 100px;
+      padding: 0px 20px;
+    }
+
+    #image {
+        width: 150px;
+        height: 150px;
+        transform: scale(2);
+        background-size: contain;
+        background-position: center;
+        background-image: url(img.png);
+        box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0) inset;
+        
+    }
+    #address h5 {
+        margin-top: -20px;
+        margin-left: 60%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        color: rgba(25, 44, 63, 0.726);
+    }
+    #address input:nth-child(1){
+       margin-bottom: 30px;
+    }
+
+    #signup button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: rgba(25, 44, 63, 0.87);
+        color: white;
+        padding: 13px 55px;
+        border: none;
+        letter-spacing: 0.5px;
+        border-radius: 8px;
+    }
+    #part2 {
+        background-color: white;
+        width: 100%;
+        min-height: 70%;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 35px;
+    }
+    
+    #text p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        color: rgba(253, 253, 253, 0.808);
+    }
+    #text h3{
+        font-family: 'Poppins', sans-serif;
+      
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        padding: 5px 34px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: transparent;
+        color: rgba(25, 44, 63, 0.781);
+        border: transparent;
+        border-bottom: 2px solid rgba(25, 44, 63, 0.781);
+        margin: 0px -2px;
+    }
+
+    #address{
+        width: 85%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text p{
+        margin-right: 20px;
+    }
+  }
